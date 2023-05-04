@@ -28,6 +28,7 @@ const ProductTables = () => {
     {
       name : "Price",
       selector: (row) => row.price,
+      
     },
     {
       name : "Categary",
@@ -61,16 +62,16 @@ const ProductTables = () => {
   },[search]);
   return (
     <DataTable  
-    title="Product List" 
+    title="Product List"
     columns={columns} 
     data={filteredProductes}
     pagination
-    fixedHeader
-    fixedHeaderScrollHeight='520px'
+    // fixedHeader
+    // fixedHeaderScrollHeight='520px'
     selectableRows
     selectableRowsHighlight
     highlightOnHover
-    actions = {<button className='btn btn-sm btn-info'> Export</button>}
+    // actions = {<button className='btn btn-sm btn-info'> Export</button>}
     subHeader
     subHeaderComponent = {
         <input type='text'

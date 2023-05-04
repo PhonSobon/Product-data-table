@@ -3,13 +3,14 @@ import './App.css';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductTable from './components/ProductTables';
+import NavbarComponent from './components/NavbarComponent';
+import FooterComponent from './components/FooterComponent';
 function App() {
   return (
     <>
-     <div className='d-flex flex-column align-items-center'>
-        <h1>React DataTable</h1>
-     </div>
+     <NavbarComponent/>
      <ProductTable/>
+     <FooterComponent/>
     </>
   );
 }
